@@ -50,24 +50,24 @@ Your project completely automates and optimizes this process. Instead of blindly
 ## 1. The Computer Vision Brain (PyTorch)
 The first layer of your system is the Deep Learning engine.
 
-The Architecture: You used ResNet18, a highly advanced convolutional neural network (CNN), but you modified its "head." Instead of just classifying images (e.g., "Is this a dog or a cat?"), you engineered it to perform Continuous Value Regression.
+The Architecture: I have used ResNet18, a highly advanced convolutional neural network (CNN), but you modified its "head." Instead of just classifying images (e.g., "Is this a dog or a cat?"), you engineered it to perform Continuous Value Regression.
 
-The Training: You trained it to predict the biological decay of a banana. By implementing Huber Loss, you made the AI highly resistant to outlier data, achieving an incredibly tight error margin of about ~12 hours.
+The Training: I trained it to predict the biological decay of a banana. By implementing Huber Loss, you made the AI highly resistant to outlier data, achieving an incredibly tight error margin of about ~12 hours.
 
-The Inversion Logic: You implemented a clever mathematical hack in the pipeline. Since the AI originally learned to predict the "Age" of the banana, your backend intercepts that number and inverts it (assuming a 10-day maximum lifespan) to create a live "Countdown to Spoilage."
+The Inversion Logic: I implemented a clever mathematical hack in the pipeline. Since the AI originally learned to predict the "Age" of the banana, your backend intercepts that number and inverts it (assuming a 10-day maximum lifespan) to create a live "Countdown to Spoilage."
 
 ## 2. The Supply Chain Graph Engine (DSA)
 Once the AI knows exactly how many days the fruit has left, the Data Structures & Algorithms (DSA) layer takes over.
 
-The Network: You mapped out a highly modern distribution network using a directed graph. It includes a Central Warehouse, City Hubs, and ultra-fast Express Dark Stores.
+The Network: I mapped out a highly modern distribution network using a directed graph. It includes a Central Warehouse, City Hubs, and ultra-fast Express Dark Stores.
 
-The Pathfinding: You implemented a custom version of Dijkstra's Algorithm. It calculates the absolute fastest transit times to every single store in the network.
+The Pathfinding: I implemented a custom version of Dijkstra's Algorithm. It calculates the absolute fastest transit times to every single store in the network.
 
-The AI-Heuristic Bridge: This is the smartest part of the system. Your algorithm actively compares the AI's predicted shelf life against the transit time. If Transit Time > Shelf Life, the system automatically slams the brakes, blacklists the route, and prevents the rotten shipment from leaving the warehouse.
+The AI-Heuristic Bridge: This is the smartest part of the system. My algorithm actively compares the AI's predicted shelf life against the transit time. If Transit Time > Shelf Life, the system automatically slams the brakes, blacklists the route, and prevents the rotten shipment from leaving the warehouse.
 
 ## 3. The Full-Stack Deployment (Streamlit)
-A model is useless if people can't interact with it. You wrapped the entire backend logic into a clean, interactive web dashboard.
+A model is useless if people can't interact with it. I wrapped the entire backend logic into a clean, interactive web dashboard.
 
 Live Inference: Users can drag and drop a batch image into the UI, and the Python backend pushes it through the vision_pipeline and PyTorch model in milliseconds.
 
-Dynamic Visual Mapping: You integrated Mermaid.js directly into the Python code. The website actively draws a visual flow-chart of the supply chain that changes color in real-time. If the fruit is fresh, the map turns the delivery routes green. If it's going to rot, it instantly flashes red warnings.
+Dynamic Visual Mapping: I integrated Mermaid.js directly into the Python code. The website actively draws a visual flow-chart of the supply chain that changes color in real-time. If the fruit is fresh, the map turns the delivery routes green. If it's going to rot, it instantly flashes red warnings.
